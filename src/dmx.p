@@ -7,9 +7,9 @@
 #define GPIO_CLEARDATAOUT 0x190
 #define GPIO_SETDATAOUT 0x194
 
-#define DMX_HALT (0x100)
-#define DMX_CHANNELS (0x104)
-#define DMX_PIN (0x108)
+#define DMX_HALT (0x200)
+#define DMX_CHANNELS (0x204)
+#define DMX_PIN (0x208)
 
 .macro SLEEPUS
 .mparam us,inst,lab
