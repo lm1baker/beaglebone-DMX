@@ -33,9 +33,9 @@
 #define DMX_PIN (6)
 #define DMX_CHANNELS (2)
 
-#define DMX_HALT_ADDR (0x100)
-#define DMX_CHANNELS_ADDR (0x101)
-#define DMX_PIN_ADDR (0x102)
+#define DMX_HALT_ADDR (0x200)
+#define DMX_CHANNELS_ADDR (0x204)
+#define DMX_PIN_ADDR (0x208)
 
 #define UDP_PORT (9930)
 #define UDP_BUFLEN (1024*64)
