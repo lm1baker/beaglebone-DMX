@@ -8,8 +8,8 @@
 #define GPIO_SETDATAOUT 0x194
 
 #define DMX_HALT (0x100)
-#define DMX_CHANNELS (0x101)
-#define DMX_PIN (0x102)
+#define DMX_CHANNELS (0x104)
+#define DMX_PIN (0x108)
 
 .macro SLEEPUS
 .mparam us,inst,lab
@@ -76,7 +76,7 @@ LOOP:
 
 DMX_LOOP:
 //    QBEQ LOOP, r3.b0, 4
-    QBEQ LOOP, r3.b0, r5.b0
+    QBEQ LOOP, r3.w0, r5.w0
     LBCO r2, CONST_PRUDRAM, r3, 1
     MOV r1, 8
 
